@@ -1,3 +1,7 @@
+
+Abhishek Kumar
+2301010322
+
 # PyTorch Implementation for Regression and Classification Tasks
 
 This repository contains the assignment submission for building PyTorch implementations of both a regression and a classification task. 
