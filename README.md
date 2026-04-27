@@ -1,88 +1,50 @@
-PyTorch Implementation for Regression and Classification Tasks
+# PyTorch Implementation for Regression and Classification Tasks
 
-This repository contains two end-to-end machine learning projects built using PyTorch. It demonstrates how to solve both regression and classification problems using neural networks.
+This repository contains the assignment submission for building PyTorch implementations of both a regression and a classification task. 
 
-📌 Projects Included
+## 📂 Repository Structure
 
-The repository is divided into two separate tasks:
+The assignment is divided into two distinct projects:
 
-1️⃣ Regression Task — Medical Insurance Cost Prediction
+### 1. [Regression Task: Medical Insurance Bill Predictor](./regression%20-%20Medical%20insurance%20bill%20predictor)
+* **Dataset:** Medical Cost Personal Dataset (`insurance.csv`).
+* **Objective:** Predict the individual medical costs billed by health insurance based on personal attributes (age, bmi, children, smoker, region, etc.).
+* **Model:** Feedforward Neural Network (Linear -> ReLU -> Linear -> ReLU -> Linear).
+* **Metrics:** Mean Absolute Error (MAE), Mean Squared Error (MSE), R² Score.
 
-Dataset: Medical Cost Personal Dataset
-Goal: Predict the medical insurance charges of a person using personal details such as:
+### 2. [Classification Task: Iris Species Predictor](./classification%20-%20Iris%20species%20predictor)
+* **Dataset:** Iris Flower Dataset (loaded via `sklearn.datasets`).
+* **Objective:** Classify Iris flowers into one of three species (*setosa, versicolor, virginica*) based on sepal and petal measurements.
+* **Model:** Multiclass Feedforward Neural Network (Linear -> ReLU -> Linear -> ReLU -> Linear -> CrossEntropyLoss).
+* **Metrics:** Accuracy Score, Precision, Recall, and F1-Score.
 
-Age
-Gender
-BMI
-Number of Children
-Smoking Status
-Region
-🧠 Model Architecture
+---
 
-A Feedforward Neural Network:
+## 🚀 How to Run
 
-Linear → ReLU → Linear → ReLU → Linear
-📊 Evaluation Metrics
-Mean Absolute Error (MAE)
-Mean Squared Error (MSE)
-R² Score
-📁 Folder
-regression - Medical insurance bill predictor
-2️⃣ Classification Task — Iris Species Prediction
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Mohit-cmd-jpg/Regression-and-Classification-Project.git
+   cd Regression-and-Classification-Project
+   ```
 
-Dataset: Iris Flower Dataset (loaded using scikit-learn)
+2. Install the necessary dependencies (applies to both tasks):
+   ```bash
+   pip install torch pandas scikit-learn matplotlib numpy
+   ```
 
-Goal: Classify flowers into three species:
+3. **To run the Regression Task:**
+   ```bash
+   cd "regression - Medical insurance bill predictor"
+   python train_regression.py
+   ```
 
-Setosa
-Versicolor
-Virginica
-
-Using features:
-
-Sepal Length
-Sepal Width
-Petal Length
-Petal Width
-🧠 Model Architecture
-
-A Multiclass Neural Network:
-
-Linear → ReLU → Linear → ReLU → Linear
-⚙️ Loss Function
-CrossEntropyLoss
-📊 Evaluation Metrics
-Accuracy
-Precision
-Recall
-F1-Score
-📁 Folder
-classification - Iris species predictor
-🚀 Installation & Setup
-1. Clone Repository
-git clone https://github.com/Mohit-cmd-jpg/Regression-and-Classification-Project.git
-cd Regression-and-Classification-Project
-2. Install Dependencies
-pip install torch pandas scikit-learn matplotlib numpy
-▶️ Run the Projects
-Run Regression Model
-cd "regression - Medical insurance bill predictor"
-python train_regression.py
-Run Classification Model
-cd "classification - Iris species predictor"
-python train_classification.py
-📌 Assignment Requirements Completed
-
-✅ PyTorch implementation for Regression Task
-✅ PyTorch implementation for Classification Task
-✅ Data preprocessing included
-✅ Neural Network model architecture implemented
-✅ Training and Testing scripts included
-✅ Evaluation metrics calculated
-✅ Separate project structure maintained
-✅ README with execution instructions
-
-🛠 Technologies Used
+4. **To run the Classification Task:**
+   ```bash
+   cd "classification - Iris species predictor"
+   python train_classification.py
+   ```
+## Technologies Used
 PyTorch
 Python
 Pandas
